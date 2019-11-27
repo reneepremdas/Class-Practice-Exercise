@@ -7,7 +7,7 @@ import pandas as pd
 ###################################################################
 
 #Read CSV
-raw_data = pd.read_csv('video_games_sales.csv')
+raw_data = pd.read_csv('video_game_sales.csv')
 
 #Create Function 
 def best_seller(df, agg_col): 
@@ -29,6 +29,6 @@ best_selling_eu = best_seller(raw_data, "EU_Sales")
 best_selling_jp = best_seller(raw_data, "JP_Sales")
 
 #Return a statement depicting the top genre
-print("The best selling genre in NA is {}".format(best_selling_na.iloc[0,0]))
-print("The best selling genre in EU is {}".format(best_selling_eu.iloc[0,0]))
-print("The best selling genre in JP is {}".format(best_selling_jp.iloc[0,0]))
+print("The best selling Platform in NA is {}".format(best_selling_na.iloc[0,0]))
+print("The best selling Platform in EU is {}".format(best_selling_eu.iloc[0,0]))
+print("The best selling Platform in JP is {}".format(best_selling_jp.iloc[0,0]))
